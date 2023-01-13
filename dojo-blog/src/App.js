@@ -1,25 +1,20 @@
 import './App.css';
+import Navbar from './Navbar';
 
 function App() {
   // Dynamic Variable
-  const title = "Welcome to the new Blog"
-  const likes = 50;
+  // const title = "Welcome to the new Blog"
+  // const likes = 50;
   // const person = { name: "Brian", age: 25 }
-  const link = "www.google.com"
+  // const link = "www.google.com"
 
 
 
   return (
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>{ title }</h1>
-        <p>Liked { likes } times</p>
-        
-        <p>{ "Hello Ninjas" }</p>
-        <p>{ [1, 2, 3, 4, 5] }</p>
-        <p>{ Math.random() * 10 }</p>
-
-        <a href={ link }>Google</a>
+        <h1>App Component</h1>
       </div>
     </div>
   );
