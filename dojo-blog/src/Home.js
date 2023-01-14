@@ -1,19 +1,19 @@
 const Home = () => {
 
-const handleClick = () => {
-    console.log("Hello Ninjas")
+const handleClick = (e) => {
+    console.log("Hello Ninjas", e)
 }
 
-const handleClickAgain = (name) => {
-    console.log("Hello " + name)
+const handleClickAgain = (name, e) => {
+    console.log("Hello " + name, e.target)
 }
 
     return ( 
         <div className="home">
             <h2>Homepage</h2>
             <button onClick={handleClick}>Click Me</button>
-            <button onClick={() => {
-                handleClickAgain('Brian')
+            <button onClick={(e) => {
+                handleClickAgain('Brian', e)
             }}>Click Me Again</button>
         </div>
      );
